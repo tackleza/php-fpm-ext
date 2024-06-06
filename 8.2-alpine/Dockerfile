@@ -52,5 +52,9 @@ RUN apk update && apk add --no-cache \
     php82-pecl-mongodb \
     php82-pecl-imagick
 
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
 # Clean up
 RUN rm -rf /var/cache/apk/*
