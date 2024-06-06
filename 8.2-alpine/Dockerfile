@@ -50,7 +50,9 @@ RUN apk update && apk add --no-cache \
     php82-xsl \
     php82-zip \
     php82-pecl-mongodb \
-    php82-pecl-imagick
+    php82-pecl-imagick \
+    nano \
+    iputils
 
 
 # Install Composer

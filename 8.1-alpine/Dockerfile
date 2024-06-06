@@ -50,7 +50,9 @@ RUN apk update && apk add --no-cache \
     php81-xsl \
     php81-zip \
     php81-pecl-mongodb \
-    php81-pecl-imagick
+    php81-pecl-imagick \
+    nano \
+    iputils
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
