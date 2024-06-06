@@ -52,11 +52,15 @@ RUN apk update && apk add --no-cache \
     php83-pecl-mongodb \
     php83-pecl-imagick \
     nano \
-    iputils
+    iputils \
+    git
 
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# chmod www to www-data
+RUN chown -R www-data:www-data /var/www
 
 # Clean up
 RUN rm -rf /var/cache/apk/*
