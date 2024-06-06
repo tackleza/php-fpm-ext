@@ -1,4 +1,4 @@
-FROM php:8.2-fpm-alpine3.20
+FROM php:8.3-fpm-alpine3.20
 
 RUN apk update && apk add --no-cache \
     autoconf \
@@ -27,30 +27,30 @@ RUN apk update && apk add --no-cache \
     tidyhtml-dev \
     zlib-dev \
     libxslt-dev \
-    php82-bcmath \
-    php82-bz2 \
-    php82-calendar \
-    php82-exif \
-    php82-gd \
-    php82-gettext \
-    php82-imap \
-    php82-intl \
-    php82-mysqli \
-    php82-opcache \
-    php82-pcntl \
-    php82-pdo \
-    php82-pdo_mysql \
-    php82-shmop \
-    php82-soap \
-    php82-sockets \
-    php82-sysvmsg \
-    php82-sysvsem \
-    php82-sysvshm \
-    php82-tidy \
-    php82-xsl \
-    php82-zip \
-    php82-pecl-mongodb \
-    php82-pecl-imagick
+    php83-bcmath \
+    php83-bz2 \
+    php83-calendar \
+    php83-exif \
+    php83-gd \
+    php83-gettext \
+    php83-imap \
+    php83-intl \
+    php83-mysqli \
+    php83-opcache \
+    php83-pcntl \
+    php83-pdo \
+    php83-pdo_mysql \
+    php83-shmop \
+    php83-soap \
+    php83-sockets \
+    php83-sysvmsg \
+    php83-sysvsem \
+    php83-sysvshm \
+    php83-tidy \
+    php83-xsl \
+    php83-zip \
+    php83-pecl-mongodb \
+    php83-pecl-imagick
 
 # Clean up
 RUN rm -rf /var/cache/apk/*
