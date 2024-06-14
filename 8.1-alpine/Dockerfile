@@ -27,6 +27,7 @@ RUN apk update && apk add --no-cache \
     tidyhtml-dev \
     zlib-dev \
     libxslt-dev \
+    gmp-dev \
     php81-bcmath \
     php81-bz2 \
     php81-calendar \
@@ -51,6 +52,7 @@ RUN apk update && apk add --no-cache \
     php81-zip \
     php81-pecl-mongodb \
     php81-pecl-imagick \
+    php81-gmp \
     nano \
     iputils \
     git

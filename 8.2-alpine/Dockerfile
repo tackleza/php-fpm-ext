@@ -27,6 +27,7 @@ RUN apk update && apk add --no-cache \
     tidyhtml-dev \
     zlib-dev \
     libxslt-dev \
+    gmp-dev \
     php82-bcmath \
     php82-bz2 \
     php82-calendar \
@@ -51,10 +52,10 @@ RUN apk update && apk add --no-cache \
     php82-zip \
     php82-pecl-mongodb \
     php82-pecl-imagick \
+    php82-gmp \
     nano \
     iputils \
     git
-
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
