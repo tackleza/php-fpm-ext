@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bash -c "cd 8.1-alpine; bash build.sh; bash push.sh"
+bash -c "cd 8.2-alpine; bash build.sh; bash push.sh"
+bash -c "cd 8.3-alpine; bash build.sh; bash push.sh"
